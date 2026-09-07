@@ -1,0 +1,12 @@
+{
+  "name": "travlr-getaways-module1",
+  "version": "1.0.0",
+  "description": "CS 465 Module One Express shell for Travlr Getaways",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
