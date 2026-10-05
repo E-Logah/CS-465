@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 
 const indexRouter = require('./app_server/routes/index');
+require('./app_api/models/db');
+const apiRouter = require('./app_api/routes/index');
 
 const app = express();
 
@@ -14,6 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Register MVC routes
 app.use('/', indexRouter);
+app.use('/api', apiRouter);
 
 // Keep the original home page working
 app.get('/', (req, res) => {

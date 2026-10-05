@@ -3,7 +3,7 @@ require('./db');
 require('./travlr');
 
 const Trip = mongoose.model('trips');
-const trips = require('../data/trips.json');
+const trips = require('../../app_server/data/trips.json');
 
 const seedDB = async () => {
   try {
